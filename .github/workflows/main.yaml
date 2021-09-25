@@ -1,15 +1,15 @@
-name: code
+name: main
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 jobs:
   build_code:
     runs-on: ${{ matrix.os }}
     defaults:
       run:
-        working-directory: ./code
+        working-directory: ./
     strategy:
       max-parallel: 4
       matrix:

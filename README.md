@@ -1,6 +1,6 @@
 # MicroTEX
 
-[![black](https://img.shields.io/badge/style-black-000000.svg)](https://github.com/psf/black)
+[![main](https://github.com/gitpetrol/microtex/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/gitpetrol/microtex/actions/workflows/main.yaml) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 __MicroTEX is a package for material microstructure and microtexture simulations.__
 

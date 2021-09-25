@@ -38,12 +38,16 @@ class Configuration:
 
     @property
     def Da(self) -> float:
-        """Diffusion coefficient of A atom [m2/s]"""
+        """
+        Diffusion coefficient of A atom [m2/s].
+        """
         return self.Aa * np.exp(-self.Qa / R / self.T)
 
     @property
     def Db(self) -> float:
-        """Diffusion coefficient of B atom [m2/s]"""
+        """
+        Diffusion coefficient of B atom [m2/s].
+        """
         return self.Ab * np.exp(-self.Qb / R / self.T)
 
     @property
@@ -120,3 +124,19 @@ def Cahn_Hilliard_2D_AB_Solver(domain: NDArray, c: Configuration) -> NDArray:
     dc_dt = M * nabla_mu + dm_dc * (dc2_dx2 + dc2_dy2)
 
     return domain + dc_dt * c.dt
+
+
+def Cahn_Hilliard_1D_AB_Solver_Naive(domain: NDArray, c: Configuration) -> NDArray:
+    # Chemical potential term.
+    # Gradient potential term.
+    # Total chemical potential.
+    # Gradient of chemical potential.
+    return NotImplemented
+
+
+def Cahn_Hilliard_2D_AB_Solver_Naive(domain: NDArray, c: Configuration) -> NDArray:
+    # Chemical potential term.
+    # Gradient potential term.
+    # Total chemical potential.
+    # Gradient of chemical potential.
+    return NotImplemented
